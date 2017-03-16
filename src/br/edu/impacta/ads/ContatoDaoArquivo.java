@@ -19,7 +19,7 @@ public class ContatoDaoArquivo implements IContatoDao {
 			String linha;
 			
 			while ((linha = br.readLine()) != null) {
-				String[] info = linha.split(",");
+				String[] info = linha.split(";");
 				String nome = info[0];
 				String telefone = info[1];
 				Contato c = new Contato(nome, telefone);
